@@ -1,0 +1,5 @@
+name,age,gender,contact,address
+ganesh,23,male,7386350967,ramachandrapalem
+ravi,22,male,5454445454,
+raju,21,,,vizag
+
