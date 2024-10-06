@@ -1,0 +1,20 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+/media
+/static
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variable files
+.env
+.DS_Store
+
+# Ignore migrations
+*/migrations/*
