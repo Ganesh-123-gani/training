@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Students Information</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Students Information</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll Number</th>
+                <th>Math</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>Grade</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in students %}
+            <tr>
+                <td>{{ student.Name }}</td>
+                <td>{{ student.RollNumber }}</td>
+                <td>{{ student.Math }}</td>
+                <td>{{ student.Science }}</td>
+                <td>{{ student.English }}</td>
+                <td>{{ student.Grade }}</td>
+                <td>{{ student.Age }}</td>
+                <td>{{ student.Gender }}</td>
+                <td>{{ student.Address }}</td>
+                <td>{{ student.Phone }}</td>
+                <td>{{ student.Email }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</body>
+</html>
